@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header text-center">
+        <h2 class="text-neutral-300 text-3xl font-bold">Search unlimited movies, TV shows and more</h2>
+        <p class="text-neutral-400 text-lg">Ready to watch? Enter a movie name to check if it's a good choice!</p>
+        <div class="flex mt-3">
+            <input type="text" class="px-4 py-3 text-white" placeholder="Search a movie ..." id="movieName">
+            <button class="btn" onclick="search()">Search Movie</button>
+        </div>
+    </div>
+
+    <div id="container" class="w-[700px] mx-auto mt-16">
+        <div class="flex gap-10 text-neutral-200">
+            <div>
+                <h1 class="text-2xl font-bold" id="title"></h1>
+                <p class="text-md" id="desc"></p>
+                <p class="my-1">Genre: <span id="genre" class="text-neutral-200"></span></p>
+                <p class="my-1">Actors: <span id="actors" class="text-neutral-200"></span></p>
+                <p class="my-1">Directors: <span id="directors" class="text-neutral-200"></span></p>
+                <p class="my-1">Release Date: <span id="date" class="text-neutral-200"></span></p>
+                <p class="my-1">Awards: <span id="awards" class="text-neutral-200"></span></p>
+                <p class="my-1">Box office collection: <span id="collection" class="text-neutral-200"></span></p>
+                <p class="my-1">Languages: <span id="languages" class="text-neutral-200"></span></p>
+                <p class="my-1">IMDB Ratings: <span id="ratings" class="text-neutral-200"></span></p>
+            </div>
+            <div class="banner">
+                <img id="poster" class="rounded-xl" src="" alt="">
+                <div class="suggestion"></div>
+            </div>            
+        </div>        
+    </div>
+
+    <h1 class="text-3xl font-bold text-center my-36 text-neutral-100" id="error"></h1>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
